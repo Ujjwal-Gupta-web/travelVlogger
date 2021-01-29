@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+
+#navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:15px;
+}
+#navigation div a{
+    color:black;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-style: italic ;
+    font-family: 'Indie Flower', cursive;
+    text-decoration: none;
+}
+#navigation div a:hover{
+    text-decoration:underline;
+}
+
+
+.image{
+    margin:15px 0 15px 0;
+    background-image: url("image-3.jpg");
+    min-height: 500px;
+    min-width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#about-container{
+    margin:100px 0 100px 0;
+}
+#about{
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap-reverse; WILL USE THIS TAG FOR MAKING IT RESPONSIVE*/ 
+    margin:15px;
+}
+#about #intro-image{
+    height:400px;
+    width:400px;
+}
+#about #intro{
+    padding: 10px;
+    font-family: 'Caveat', cursive;
+}
+
+
+
+#places-container{
+    margin:100px 0 100px 0;
+}
+#places{
+    display: flex;
+    flex-wrap: wrap;
+    margin:15px;
+}
+#places img{
+    height:280px;
+    width:320px;
+    margin:2px;
+}
+
+
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:100px;
+}
+#contact img{
+    height:50px;
+    width:50px;
+    margin:0 10px 8px 10px;
+}
+#contact img:hover{
+    height: 54px;
+    width:54px;
+}
+
+
+.card{
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(236, 230, 230);
+    box-shadow: 10px 10px 75px rgb(206, 206, 206);
+    margin:45px 15px 25px 15px;
+    font-family: 'Gorditas', cursive;
+    padding:10px;
+}
+.card-content{
+    font-family: 'Caveat', cursive;
+    font-size:larger;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-content img{
+    padding:10px ;
+height: 200px;
+width: 400px;
+}
+
+
+@media screen and (max-width: 800px){
+ 
+    #about{
+        flex-wrap: wrap-reverse;
+    }
+
+    .card-content{
+        flex-wrap: wrap-reverse;
+    }
+    .card-content img{
+        height: auto;
+        width:100%;
+    }
+
+}
